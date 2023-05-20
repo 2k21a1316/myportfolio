@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/profile.jpg" alt="">
+                <ul>
+                    <li><a href="#"><h3>Home</h3></a></li>
+                    <li><a href="#"><h3>About</h3></a></li>
+                    <li><a href="#"><h3>Portfolio</h3></a></li>
+                   <li><a href="#"><h3>Contact</h3></a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <!-- <p> Frontend Web Developer</p> -->
+                <h1>Hi, I'm <span>Vishal</span><br> From <span>India</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------about-------------------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title"> About Me </h3>
+                    <p>Hi I'm Vishal And I'm Student Of Delhi Technological University </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                    <!-- <p class="tab-links"> Experience</p> -->
+
+                </div>
+                <div class="tab-content active-tab " id="Skills"  >
+                    <ul>
+                        <li><span>DSA</span></li>
+                        <li><span>OOPS</span></li>
+                        <li><span>DBMS</span></li>
+                        <li><span>C++</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JAVASCRIPT</span></li>
+                    </ul>
+                </div>
+                <div class="tab-content " id="Education">
+                    <ul>
+                        <li><span>BTECH</span><br>SOFTWARE ENGINEERING</li>
+                        <li><span>2021-2025</span><br>DELHI TECHNOLOGICAL UNIVERSITY</li>
+                        <li><span>2019-2020</span><br> (CBSE)12TH PASSOUT <br>FROM GOVT BOYS SENIOR SECONDARY SCHOOL</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+    }
+    </script> -->
+</body>
+</html>
